@@ -1,0 +1,60 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+.Python
+pip-wheel-metadata/
+.venv/
+venv/
+env/
+ENV/
+
+# ── Node / npm ─────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnp
+.pnp.js
+
+# ── Build outputs ──────────────────────────────────────────────────────────────
+dist/
+build/
+frontend/dist/
+frontend/.vite/
+packages/*/dist/
+packages/*/*.js.map
+
+# ── Environment / secrets ──────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── IDE & OS ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Test / scratch artefacts ───────────────────────────────────────────────────
+test_*.py
+debug_*.py
+patch_*.py
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml

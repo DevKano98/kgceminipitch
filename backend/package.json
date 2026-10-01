@@ -1,0 +1,15 @@
+{
+  "name": "@appforge/backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": { "dev": "python -m uvicorn main:app --reload --port 8787 --host 0.0.0.0", "start": "python -m uvicorn main:app --port 8787 --host 0.0.0.0" },
+  "dependencies": {
+    "@appforge/app-spec": "*",
+    "@fastify/cors": "^9.0.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "groq-sdk": "^0.8.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": { "tsx": "^4.19.2", "@types/node": "^22.7.0" }
+}
