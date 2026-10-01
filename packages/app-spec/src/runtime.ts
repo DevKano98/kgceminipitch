@@ -55,7 +55,7 @@ export function applyAction(spec: AppSpec, a: Action | Omit<Action, "steps">, st
             // If the value is already a primitive (bool, null, number) use directly;
             // otherwise treat it as a formula string to evaluate
             if (typeof f === "boolean" || f === null || typeof f === "number") {
-              item[k] = f;
+              item[k] = f as Val;
             } else {
               item[k] = evaluate(String(f), e);
             }
